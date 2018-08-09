@@ -27,13 +27,13 @@
                         </div>
                         <ul class="nav navbar-nav">
                             <li>
-                                <a href="#">Home</a>
+                                <a href="home.html">Home</a>
                             </li>
                             <li>
-                                <a href="#">About Us</a>
+                                <a href="about.html">About Us</a>
                             </li>
                             <li class="active">
-                                <a href="index.html">Products</a>
+                                <a href="products.html">Products</a>
                             </li>
                             <li>
                                 <a href="contact.html">Contact</a>
@@ -41,7 +41,7 @@
                         </ul>
                         <ul class="nav navbar-nav navbar-right">
                             <li>
-                                <a href="#" target="_blank">
+                                <a href="wishlist.html" target="_blank">
                                     <span>
                                         <i class="fa fa-heart"></i>
                                     </span>Wishlist</a>
@@ -76,77 +76,233 @@
                     <!-- SEARCH AREA END -->
             </div>
             <div class="item2" id="category">
+
                 <h4 id="cat-head">Categories</h4>
                 <ul>
-                    <li><input type="checkbox" name="clothes" value="clothes"><a href="#">Clothes</a></li>
-                    <li><input type="checkbox" name="accessories" value="accessories"><a href="#">Accessories</a></li>
+                    <li>
+                        <input type="checkbox" name="clothes" value="clothes">
+                        <a href="#">Clothes</a>
+                    </li>
+                    <li>
+                        <input type="checkbox" name="accessories" value="accessories">
+                        <a href="#">Accessories</a>
+                    </li>
                 </ul>
 
-                <input type="checkbox" name="male" value="men">Men<br>
-                <input type="checkbox" name="female" value="women">Women<br>
+                <input type="checkbox" name="male" value="men">Men
+                <br>
+                <input type="checkbox" name="female" value="women">Women
+                <br>
                 <br>
                 <button type="filter">Filter</button>
             </div>
             <div class="item3">
                 <H3 class="prod-head">Products</H3>
+
                 <div class="row">
+
                     <div class="col-md-3">
-                        <img src="products/men/Accessories/hat-1.jpg" alt="">
-                        <div><p class="descript">Men's hoody | R399</p></div>
+                        <div class="thumbnail">
+                            <img src="products/men/Accessories/hat-1.jpg" alt="">
+                            <div class="data">
+                                <p class="details">Regular fit Beanie - Black</p>
+                                <p class="size">Size: fit all <input type="checkbox" name="size" value="a"> <br></p>
+                                <span class="carts">
+                                    <a href="#"><i class="fa fa-heart icon wish"></i></a>
+                                    <a href="#"><i class="glyphicon glyphicon-shopping-cart icon cart"></i></a>
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                        <p class="descript">Regular fit Beanie | R160</p>
                     </div>
+
+
                     <div class="col-md-3">
-                        <img src="products/men/Clothes/hoody-1.jpg" alt="">
-                        <p class="descript">Men's hoody | R399</p>
+                        <div class="thumbnail">
+                            <img src="products/men/Clothes/hoody-1.jpg" alt="">
+                            <div class="data">
+                                <p class="details">Men's Hooded top - Black</p>
+                                <p class="size">size: s <input type="checkbox" name="size" value="s"> m <input type="checkbox" name="size" value="m"> l <input type="checkbox" name="size" value="l"> <br></p>
+                                <span class="carts">
+                                    <a href="#"><i class="fa fa-heart icon wish"></i></a>
+                                    <a href="#"><i class="glyphicon glyphicon-shopping-cart icon cart"></i></a>
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                        <p class="descript">Men's hooded top | R350</p>
                     </div>
+
                     <div class="col-md-3">
-                        <img src="products/women/Accessories/hat-1.jpg" alt="">
-                        <p class="descript">Men's hoody | R399</p>
+                        <div class="thumbnail">
+                            <img src="products/women/Accessories/hat-1.jpg" alt="">
+                            <div class="data">
+                                <p class="details">CatWomen Ladies Beanie - Black</p>
+                                <p class="size">size: fit all <input type="checkbox" name="size" value="a"> <br></p>
+                                <span class="carts">
+                                    <a href="#"><i class="fa fa-heart icon wish"></i></a>
+                                    <a href="#"><i class="glyphicon glyphicon-shopping-cart icon cart"></i></a>
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                        <p class="descript">CatWoman Beanie | R180</p>
                     </div>
+
                     <div class="col-md-3">
-                        <img src="products/women/Clothes/hoody-1.jpg" alt="">
-                        <p class="descript">Men's hoody | R399</p>
+                        <div class="thumbnail">
+                            <img src="products/women/Clothes/hoody-1.jpg" alt="">
+                            <div class="data">
+                                <p class="details">Ladies hooded top - Orange</p>
+                                <p class="size">size: s <input type="checkbox" name="size" value="s"> m <input type="checkbox" name="size" value="m"> l <input type="checkbox" name="size" value="l"> <br></p>
+                                <span class="carts">
+                                    <a href="#"><i class="fa fa-heart icon wish"></i></a>
+                                    <a href="#"><i class="glyphicon glyphicon-shopping-cart icon cart"></i></a>
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                        <p class="descript">Ladies hooded top | R350</p>
                     </div>
                 </div>
 
                 <div class="row">
                     <div class="col-md-3">
+                        <div class="thumbnail">
                         <img src="products/women/Sandals/sandal-1.jpg" alt="">
-                        <p class="descript">Men's hoody | R399</p>
+                        <div class="data">
+                            <p class="details">Ladies crossed Fur sandals - Black</p>
+                            <p class="size">size(UK): 
+                                <select>
+                                    <option value="empty">--</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                    <option value="6">6</option>
+                                  </select> <br></p>
+                            <span class="carts">
+                                <a href="#"><i class="fa fa-heart icon wish"></i></a>
+                                <a href="#"><i class="glyphicon glyphicon-shopping-cart icon cart"></i></a>
+                            </span>
+                            </p>
+                        </div>
                     </div>
-                    <div class="col-md-3">
-                        <img src="products/men/Clothes/hoody-2.jpg" alt="">
-                        <p class="descript">Men's hoody | R399</p>
+                        
+                        <p class="descript">Ladies Fur sandals | R450</p>
                     </div>
+
                     <div class="col-md-3">
-                        <img src="products/men/Accessories/hat-2.jpg" alt="">
-                        <p class="descript">Men's hoody | R399</p>
+                        <div class="thumbnail">
+                            <img src="products/men/Clothes/hoody-2.jpg" alt="">
+                            <div class="data">
+                                <p class="details">Men's embroided top - Black</p>
+                                <p class="size">size: s <input type="checkbox" name="size" value="s"> m <input type="checkbox" name="size" value="m"> l <input type="checkbox" name="size" value="l"> <br></p>
+                                <span class="carts">
+                                    <a href="#"><i class="fa fa-heart icon wish"></i></a>
+                                    <a href="#"><i class="glyphicon glyphicon-shopping-cart icon cart"></i></a>
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                        <p class="descript">Men's embroided hoody | R420</p>
                     </div>
+
                     <div class="col-md-3">
-                        <img src="products/women/Clothes/hoody-2.jpg" alt="">
-                        <p class="descript">Men's hoody | R399</p>
+                        <div class="thumbnail">
+                            <img src="products/men/Accessories/hat-2.jpg" alt="">
+                            <div class="data">
+                                    <p class="details">Regular Fit Beanie - Black</p>
+                                    <p class="size">size: fit all <input type="checkbox" name="size" value="a">  <br></p>
+                                    <span class="carts">
+                                        <a href="#"><i class="fa fa-heart icon wish"></i></a>
+                                        <a href="#"><i class="glyphicon glyphicon-shopping-cart icon cart"></i></a>
+                                    </span>
+                                    </p>
+                                </div>
+                        </div>
+                        <p class="descript">Regular fit Beanie | R160</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                            <img src="products/women/Clothes/hoody-2.jpg" alt="">
+                            <div class="data">
+                                    <p class="details">Women's embroided top - Black</p>
+                                    <p class="size">size: s <input type="checkbox" name="size" value="s"> m <input type="checkbox" name="size" value="m"> l <input type="checkbox" name="size" value="l"> <br></p>
+                                    <span class="carts">
+                                        <a href="#"><i class="fa fa-heart icon wish"></i></a>
+                                        <a href="#"><i class="glyphicon glyphicon-shopping-cart icon cart"></i></a>
+                                    </span>
+                                    </p>
+                                </div>
+                        </div>
+                        <p class="descript">Wmen's embroided hoody | R420</p>
                     </div>
                 </div>
 
                 <div class="row">
-                        <div class="col-md-3">
+                    <div class="col-md-3">
+                        <div class="thumbnail">
                             <img src="products/women/Sandals/sandal-2.jpg" alt="">
-                            <p class="descript">Men's hoody | R399</p>
+                            <div class="data">
+                                    <p class="details">Ladies Plain Fur sandals - Black</p>
+                                    <p class="size">size(UK): <select>
+                                            <option value="empty">--</option>
+                                            <option value="3">3</option>
+                                            <option value="4">4</option>
+                                            <option value="5">5</option>
+                                            <option value="6">6</option>
+                                          </select> <br></p>
+                                    <span class="carts">
+                                        <a href="#"><i class="fa fa-heart icon wish"></i></a>
+                                        <a href="#"><i class="glyphicon glyphicon-shopping-cart icon cart"></i></a>
+                                    </span>
+                                    </p>
+                                </div>
                         </div>
-                        <div class="col-md-3">
-                            <img src="products/men/Clothes/jogger-1.jpg" alt="">
-                            <p class="descript">Men's hoody | R399</p>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="products/men/Accessories/hat-3.jpg" alt="">
-                            <p class="descript">Men's hoody | R399</p>
-                        </div>
-                        <div class="col-md-3">
-                            <img src="products/women/Clothes/sweater-1.jpg" alt="">
-                            <p class="descript">Men's hoody | R399</p>
-                        </div>
+                        <p class="descript">Ladies Fur sandals | R380</p>
                     </div>
+
+                    <div class="col-md-3">
+                        <div class="thumbnail">
+                        <img src="products/men/Clothes/jogger-1.jpg" alt="">
+                        <div class="data">
+                                <p class="details">Black with red stripes on sides</p>
+                                <p class="size">size: <select>
+                                        <option value="empty">--</option>
+                                        <option value="30">30</option>
+                                        <option value="32">32</option>
+                                        <option value="34">34</option>
+                                        <option value="40">40</option>
+                                      </select> <br></p>
+                                <span class="carts">
+                                    <a href="#"><i class="fa fa-heart icon wish"></i></a>
+                                    <a href="#"><i class="glyphicon glyphicon-shopping-cart icon cart"></i></a>
+                                </span>
+                                </p>
+                            </div>
+                        </div>
+                        <p class="descript">Men's sweatpants | R399</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="products/men/Accessories/hat-3.jpg" alt="">
+                        <p class="descript">Regular fit Beanie | R160</p>
+                    </div>
+
+                    <div class="col-md-3">
+                        <img src="products/women/Clothes/sweater-1.jpg" alt="">
+                        <p class="descript">Leopard print sweater | R399</p>
+                    </div>
+                </div>
+
+                <div id="prod-end"></div>
+
                 <div class="row">
-                    <div class="col-md-12"><a href="products_2.html" id="next-page">next page</a></div>
+                    <div class="col-md-12">
+                        <a href="products_2.html" id="next-page">next page</a>
+                    </div>
                 </div>
             </div>
             <div class="item5">Footer</div>

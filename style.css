@@ -54,7 +54,7 @@ button{
 
 /*Main or Products*/
 
-.prod-head{
+.prod-head, #prod-end{
     border-bottom: 5px double gray;
 }
 .row > div{
@@ -66,7 +66,53 @@ button{
     
     
 }
+/*---------Product details-------------*/
+.details{
+    font-size: 20px;
+    color: black;
+    margin-left: 10px;
+  }
+  .size{
+    font-size: 20px;
+    color: black;
+    margin-left: 0;
+  }
 
+  .icon{
+      color: black;
+  }
+  
+  .carts{
+  margin: 20%;
+  margin-bottom: 0;
+  font-size: 30px;
+  }
+
+  .data {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 85%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color:#cbced3;
+    border-radius: 5px;
+  }
+  .details{
+      margin-top: 5%;
+  }
+
+  .icon:hover{
+    color:#434547;
+  }
+  .thumbnail:hover .data{
+    opacity: 1;
+    transition: opacity .35s ease;
+  }
+/*---------------------------*/
 
 .row{
     margin: 20px;
